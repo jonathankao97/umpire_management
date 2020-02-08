@@ -1,3 +1,6 @@
+.idea
+.gitignore
+
 # Django #
 *.log
 *.pot
