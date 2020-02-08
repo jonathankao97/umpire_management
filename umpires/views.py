@@ -4,7 +4,6 @@ from __future__ import unicode_literals\
 # Create your views here.
 from django.contrib.auth import login, authenticate
 from django.shortcuts import render, redirect
-
 from umpires.forms import SignUpForm
 
 
