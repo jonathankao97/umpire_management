@@ -17,12 +17,12 @@ from django.conf.urls import url
 from django.contrib import admin
 from django.contrib.auth.views import LoginView, LogoutView
 from django.urls import include, path
-from umpire_management import views as HomeViews
-# from umpires import views as UmpireViews
+from umpires import views
 
 urlpatterns = [
-    # url('', HomeViews.home , name = 'home'),
-    path('umpires/', include('umpires.urls')),
+    # url('', include('umpires.urls')),
+    url('signup/', views.SignUp, name = 'signup'),
+    url('home/', views.home , name = 'home'),
     url(r'^admin/', admin.site.urls),
     url('login/', LoginView.as_view(template_name = 'login.html'), name = 'login'),
     url('logout/', LogoutView.as_view(), name='logout'),

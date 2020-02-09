@@ -5,5 +5,6 @@ from django.urls import path, include
 from umpires import views
 
 urlpatterns = [
-    path('signup/', views.SignUp, name='signup'),
+    # url('home/', views.home , name = 'home'),
+    # path('signup/', views.SignUp, name='signup'),
 ]

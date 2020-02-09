@@ -7,6 +7,9 @@ from django.shortcuts import render, redirect
 
 from umpires.forms import SignUpForm
 
+def home(request):
+    return render(request, "home.html")
+
 
 def SignUp(request):
     if request.method == 'POST':
